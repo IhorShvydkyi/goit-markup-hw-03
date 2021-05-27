@@ -1,0 +1,373 @@
+:root {
+   --main-color: #fff;
+   --main-text-color: #212121;
+   --second-text-color: #757575;
+   --special-color: #2196f3;
+   --main-font: "Roboto", sans-serif;
+   --bg-hero-footer: #2f303a;
+   --bg-team-filter: #f5f4fa;
+   --basic-card-gap:30px;
+}
+body {
+   font-family: var(--main-font);
+   font-size: 14px;
+   line-height: 1.142;
+   font-weight: 400;
+   letter-spacing: 0.03em;
+   color: var(--main-text-color);
+   background: var(--main-color);
+}
+
+/* контейнеры всех секций */
+.container {
+   width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+   display: flex;
+}
+.hero-part .container,
+.business-part .container,
+.our-team .container,
+.footer-part .container ,
+.portfolio-content .container {
+   flex-direction: column; 
+}
+  /* убирает зазор делая картинки элементом:block
+    для our team и pattern list */
+    img {
+      display: block;
+      max-width: 100%;
+      }
+/* шапка сайта */
+.header-part {
+   height: 80px;
+   border-bottom: 1px solid #ececec;
+}
+/* логотип сайта */
+
+/* голубая часть логотипа сайта */
+.blue-logo-part {
+   color: var(--special-color);
+   font-family: "Raleway";
+
+}
+/* стилизация логотипа сайта */
+.logo-link {
+   text-decoration: none;
+   color: #000;
+   font-family: "Raleway";
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.192;
+   letter-spacing: inherit;
+   padding-top: 24px;
+}
+/* навигация сайта */
+
+.navigation-list {
+   width: 294px;
+   margin-left:93px;
+}
+.navigation-list li{
+   margin-right: 50px;
+}
+.navigation-list li:last-child{
+   margin-right: 0;
+}
+.contacts-list {
+   margin-left:331px;
+}
+.contacts-list li:last-child {
+   margin-left: 50px;
+}
+
+/* список навигации и список контактов*/
+.header-part ul {
+   display: flex;
+}
+/* стилизации ссылок навигации и контактов*/
+.navigation-list a {
+   display: block;
+   font-weight: 500;
+   font-size:inherit;
+   line-height: inherit;
+   letter-spacing: 0.02em;
+   color: var(--main-text-color);
+   text-decoration: none;
+   padding: 32px 0 32px 0;
+}
+.contacts-list a{
+   display: block;
+   text-decoration: none;
+   font-weight: 500;
+   font-size: inherit;
+   line-height: inherit;
+   letter-spacing: 0.02em;
+   color: var(--second-text-color);
+   padding: 32px 0 32px 0;
+}
+.navigation-list a:hover,
+.contacts-list a:hover,
+.navigation-list a:focus,
+.contacts-list a:focus,
+a.active {
+   color: var(--special-color);
+}
+
+/* оформление страницы studio */
+/* Hero сайта */
+.hero-part {
+   background: var(--bg-hero-footer); 
+   padding:200px 0 ;
+}
+
+.hero-header {
+   width: 696px;
+   color:var(--main-color);
+   text-align: center;
+   font-size: 44px;
+   font-weight: 900;
+   line-height: 1.36;
+   text-transform: uppercase;
+   letter-spacing: 0.06em;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom:var(--basic-card-gap);
+}
+
+.hero-button {
+   display: block;
+   margin: 0 auto;
+   font-family: inherit;
+   color:var(--main-color);
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.875;
+   letter-spacing: 0.06;
+   background:var(--special-color);
+   border-radius: 4px;
+   border: 0;
+   padding:10px 32px;
+}
+.hero-button:hover {
+   cursor: pointer;
+}
+/* Секция "особености работы" */
+.features-part {
+   padding: 94px 0 94px 0;
+}
+/*  скрытый заголовок */
+.hidden-header {
+   display: none;
+}
+.features-part ul {
+   width: 100%;
+   display: inherit;
+   justify-content: space-around;
+
+}
+.features-part li {
+   width: 270px;
+   margin-right:var(--basic-card-gap);
+}
+.features-part li:last-child{
+   margin-right: 0;
+}
+.features-part h3 {
+   text-transform: uppercase;
+   font-size: inherit;
+   font-weight: 700;
+   line-height: inherit;
+}
+.features-part p {
+   margin-top: 10px;
+   line-height: 1.714;
+   letter-spacing: 0.03em;
+   color: var(--second-text-color);
+}
+/* секция Чем мы занимаемся */
+.business-part {
+   padding: 0px 0 94px 0;
+}
+
+.business-part h2 {
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 1.166;
+   text-align: center;
+}
+.business-part ul {
+   display: flex;
+   margin-top:50px;
+}
+.business-part li {
+   margin-right: var(--basic-card-gap);
+}
+.business-part li:last-child {
+   margin-right: 0;
+}
+/* секция Наша команда */
+.our-team {
+   background-color:var(--bg-team-filter);
+   padding: 94px 0 94px 0;
+}
+
+.our-team h2 {
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 1.166;
+   text-align: center;
+   letter-spacing: inherit;
+}
+.our-team ul {
+   display: flex;
+   margin-top:50px;
+}
+.our-team li {
+   background-color: var(--main-color);
+   border-radius: 0px 0px 3px 3px;
+   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+   margin-right: var(--basic-card-gap);
+}
+.our-team li:last-child{
+   margin-right: 0;
+}
+.card-description {
+   padding:30px;
+}
+.our-team h3 {
+   font-weight: 500;
+   font-size: 16px;
+   text-align: center;
+   line-height: 1.187;
+   letter-spacing: inherit;
+}
+.our-team p {
+   font-size:16px;
+   letter-spacing: inherit;
+   text-align: center;
+   line-height: 1.187;
+   margin-top: 10px;
+   color: var(--second-text-color);
+ 
+}
+/* секция подвал сайта */
+.footer-part {
+   background-color:var(--bg-hero-footer);
+   padding: 60px 0;
+}
+.logo-link-footer {
+   text-decoration: none;
+   color:var(--main-color);
+   font-family: "Raleway";
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.192;
+   letter-spacing: 0.03em;
+}
+.footer-part ul {
+   margin-top: 20px;
+   justify-content: space-between;
+}
+.footer-part li {
+   line-height: 1.714;
+   letter-spacing: inherit;
+   font-style: normal;
+   color:var(--main-color);
+   margin-bottom: 9px;
+}
+.footer-part li:last-child {
+margin-bottom: 0;
+}
+.footer-part ul a {
+   color: #ffffff99;
+   font-style: normal;
+   line-height: 1.714;
+   letter-spacing:inherit;
+   text-decoration:none;
+}
+.footer-part ul a:hover {
+   color: var(--special-color);
+}
+/* оформление страницы portfolio */
+/* оформление header и footer обоих страниц одинаково  */
+.portfolio-content {
+ padding: 94px 0;
+}
+
+.filter-list {
+   margin-left:280px;
+   margin-bottom: 50px;
+   display:flex;
+}
+.filter-list li {
+    margin-right:8px;
+}
+.filter-list li:last-child{
+   margin-right:0;
+}
+.filter-list .filter-link-blue {
+   background-color: var(--special-color);
+   color: var(--main-color);
+}
+.filter-list button {
+   padding: 6px 22px;
+   background-color: var(--bg-team-filter);
+   font-size: 16px;
+   font-weight: 500;
+   letter-spacing: inherit;
+   line-height: 1.625;
+   border: 0;
+   border-radius: 4px;
+   color:var(--main-text-color);
+}
+
+
+.filter-list button:hover,
+.filter-list button:focus {
+   background: var(--special-color);
+   color:var(--main-color);
+   box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.3);
+   cursor: pointer;
+}
+/* примеры страницы Portfolio */
+.pattern-list {
+    margin-top:calc(-1* var(--basic-card-gap));
+    margin-left:calc(-1* var(--basic-card-gap));
+   display:flex;
+   flex-wrap: wrap;
+  }
+.pattern-list a {
+   text-decoration: none;
+}
+.pattern-list li{
+   background-color: var(--main-color);
+   flex-basis: calc(100%/3 -30px);
+   margin-left: var(--basic-card-gap);
+   margin-top: var(--basic-card-gap);
+
+}
+/* .pattern-list li:nth-child(3n+3) { */
+   /* margin-right: 0;} */
+ 
+.pattern-card-description {
+ padding:20.43px  24px; 
+ border-left: 1px solid #eee;
+ border-right: 1px solid #eee;
+ border-bottom: 1px solid #eee;
+} 
+
+.pattern-list h3 {
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+   color: var(--main-text-color);
+}
+.pattern-list p {
+  margin-top: 4.09px;
+   font-size: 16px;
+   line-height: 1.875;
+   letter-spacing: 0.03em;
+   color: var(--second-text-color);
+}
