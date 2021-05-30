@@ -1,3 +1,17 @@
+/* цвет основного текста : #212121;
+ */
+
+ /* цвет вторичного текста : #757575;
+ */
+
+ /* белый #FFFFFF */
+
+ /* акцет #2196F3 */
+
+ /*основной цвет фона #FFFFFF  */
+
+/* вторичный цвет фона #F5F4FA */
+
 :root {
    --main-color: #fff;
    --main-text-color: #212121;
@@ -18,7 +32,7 @@ body {
    background: var(--main-color);
 }
 
-/* контейнеры всех секций */
+/* Общий контейнер для всех */
 .container {
    width: 1200px;
    margin: 0 auto;
@@ -32,26 +46,29 @@ body {
 .portfolio-content .container {
    flex-direction: column; 
 }
-  /* убирает зазор делая картинки элементом:block
-    для our team и pattern list */
-    img {
-      display: block;
-      max-width: 100%;
-      }
-/* шапка сайта */
+
+/* Убирается зазор между картинками и делает их элементом:block
+для our team и pattern list */
+img {
+   display: block;
+   max-width: 100%;
+}
+
+/* Шапка сайта */
 .header-part {
    height: 80px;
    border-bottom: 1px solid #ececec;
 }
-/* логотип сайта */
 
-/* голубая часть логотипа сайта */
+/* Лого */
+
+/* Лого голубая часть */
 .blue-logo-part {
    color: var(--special-color);
    font-family: "Raleway";
-
 }
-/* стилизация логотипа сайта */
+
+/* Стилизация лого */
 .logo-link {
    text-decoration: none;
    color: #000;
@@ -62,8 +79,8 @@ body {
    letter-spacing: inherit;
    padding-top: 24px;
 }
-/* навигация сайта */
 
+/* навигация сайта и контакты */
 .navigation-list {
    width: 294px;
    margin-left:93px;
@@ -80,12 +97,11 @@ body {
 .contacts-list li:last-child {
    margin-left: 50px;
 }
-
-/* список навигации и список контактов*/
 .header-part ul {
    display: flex;
 }
-/* стилизации ссылок навигации и контактов*/
+
+/* Стили навигации и контактов */
 .navigation-list a {
    display: block;
    font-weight: 500;
@@ -114,13 +130,13 @@ a.active {
    color: var(--special-color);
 }
 
-/* оформление страницы studio */
-/* Hero сайта */
+/* Студия  */
+
+/* Герой */
 .hero-part {
    background: var(--bg-hero-footer); 
    padding:200px 0 ;
 }
-
 .hero-header {
    width: 696px;
    color:var(--main-color);
@@ -134,7 +150,6 @@ a.active {
    margin-right: auto;
    margin-bottom:var(--basic-card-gap);
 }
-
 .hero-button {
    display: block;
    margin: 0 auto;
@@ -152,11 +167,12 @@ a.active {
 .hero-button:hover {
    cursor: pointer;
 }
-/* Секция "особености работы" */
+
+/* Особенности работы */
 .features-part {
    padding: 94px 0 94px 0;
 }
-/*  скрытый заголовок */
+/* Скрытый h1 */
 .hidden-header {
    display: none;
 }
@@ -164,7 +180,6 @@ a.active {
    width: 100%;
    display: inherit;
    justify-content: space-around;
-
 }
 .features-part li {
    width: 270px;
@@ -185,11 +200,11 @@ a.active {
    letter-spacing: 0.03em;
    color: var(--second-text-color);
 }
-/* секция Чем мы занимаемся */
+
+/* Чем мы занимаемся*/
 .business-part {
    padding: 0px 0 94px 0;
 }
-
 .business-part h2 {
    font-weight: bold;
    font-size: 36px;
@@ -206,12 +221,12 @@ a.active {
 .business-part li:last-child {
    margin-right: 0;
 }
-/* секция Наша команда */
+
+/* Наша команда */
 .our-team {
    background-color:var(--bg-team-filter);
    padding: 94px 0 94px 0;
 }
-
 .our-team h2 {
    font-weight: bold;
    font-size: 36px;
@@ -251,7 +266,8 @@ a.active {
    color: var(--second-text-color);
  
 }
-/* секция подвал сайта */
+
+/* Футер */
 .footer-part {
    background-color:var(--bg-hero-footer);
    padding: 60px 0;
@@ -289,12 +305,12 @@ margin-bottom: 0;
 .footer-part ul a:hover {
    color: var(--special-color);
 }
-/* оформление страницы portfolio */
-/* оформление header и footer обоих страниц одинаково  */
+
+/* Портфолио */
+
 .portfolio-content {
  padding: 94px 0;
 }
-
 .filter-list {
    margin-left:280px;
    margin-bottom: 50px;
@@ -321,8 +337,6 @@ margin-bottom: 0;
    border-radius: 4px;
    color:var(--main-text-color);
 }
-
-
 .filter-list button:hover,
 .filter-list button:focus {
    background: var(--special-color);
@@ -330,13 +344,14 @@ margin-bottom: 0;
    box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.3);
    cursor: pointer;
 }
-/* примеры страницы Portfolio */
+
+/* Примеры на странице Портфолио */
 .pattern-list {
     margin-top:calc(-1* var(--basic-card-gap));
     margin-left:calc(-1* var(--basic-card-gap));
    display:flex;
    flex-wrap: wrap;
-  }
+}
 .pattern-list a {
    text-decoration: none;
 }
@@ -345,18 +360,13 @@ margin-bottom: 0;
    flex-basis: calc(100%/3 -30px);
    margin-left: var(--basic-card-gap);
    margin-top: var(--basic-card-gap);
-
-}
-/* .pattern-list li:nth-child(3n+3) { */
-   /* margin-right: 0;} */
- 
+} 
 .pattern-card-description {
  padding:20.43px  24px; 
  border-left: 1px solid #eee;
  border-right: 1px solid #eee;
  border-bottom: 1px solid #eee;
 } 
-
 .pattern-list h3 {
    font-weight: bold;
    font-size: 18px;
