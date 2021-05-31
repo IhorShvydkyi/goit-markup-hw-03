@@ -37,14 +37,19 @@ body {
    width: 1200px;
    margin: 0 auto;
    padding: 0 15px;
-   display: flex;
 }
-.hero-part .container,
-.business-part .container,
-.our-team .container,
+.container .doing ,
+.container .team-members,
 .footer-part .container ,
 .portfolio-content .container {
    flex-direction: column; 
+}
+.section {
+   padding: 94px 0 94px 0;
+}
+.header-line {
+   display: flex;
+   align-items: center;
 }
 
 /* Убирается зазор между картинками и делает их элементом:block
@@ -77,7 +82,6 @@ img {
    font-size: 26px;
    line-height: 1.192;
    letter-spacing: inherit;
-   padding-top: 24px;
 }
 
 /* навигация сайта и контакты */
@@ -92,7 +96,7 @@ img {
    margin-right: 0;
 }
 .contacts-list {
-   margin-left:331px;
+   margin-left: auto;
 }
 .contacts-list li:last-child {
    margin-left: 50px;
@@ -112,7 +116,7 @@ img {
    text-decoration: none;
    padding: 32px 0 32px 0;
 }
-.contacts-list a{
+.contacts-list .link{
    display: block;
    text-decoration: none;
    font-weight: 500;
@@ -123,9 +127,9 @@ img {
    padding: 32px 0 32px 0;
 }
 .navigation-list a:hover,
-.contacts-list a:hover,
+.contacts-list .link:hover,
 .navigation-list a:focus,
-.contacts-list a:focus,
+.contacts-list .link:focus,
 a.active {
    color: var(--special-color);
 }
@@ -136,6 +140,9 @@ a.active {
 .hero-part {
    background: var(--bg-hero-footer); 
    padding:200px 0 ;
+}
+.hero-part .container {
+   flex-direction: column;
 }
 .hero-header {
    width: 696px;
@@ -169,32 +176,33 @@ a.active {
 }
 
 /* Особенности работы */
-.features-part {
-   padding: 94px 0 94px 0;
+.features {
+   display: flex;
 }
+
 /* Скрытый h1 */
 .hidden-header {
    display: none;
 }
-.features-part ul {
+.section .features ul {
    width: 100%;
    display: inherit;
    justify-content: space-around;
 }
-.features-part li {
+.section .features li {
    width: 270px;
    margin-right:var(--basic-card-gap);
 }
-.features-part li:last-child{
+.section .features li:last-child{
    margin-right: 0;
 }
-.features-part h3 {
+.section .features h3 {
    text-transform: uppercase;
    font-size: inherit;
    font-weight: 700;
    line-height: inherit;
 }
-.features-part p {
+.section .features p {
    margin-top: 10px;
    line-height: 1.714;
    letter-spacing: 0.03em;
@@ -205,27 +213,27 @@ a.active {
 .business-part {
    padding: 0px 0 94px 0;
 }
+
 .business-part h2 {
    font-weight: bold;
    font-size: 36px;
    line-height: 1.166;
    text-align: center;
 }
-.business-part ul {
+.doing-list {
    display: flex;
    margin-top:50px;
 }
-.business-part li {
+.doing-list .item {
    margin-right: var(--basic-card-gap);
 }
-.business-part li:last-child {
+.doing-list .item :last-child {
    margin-right: 0;
 }
 
 /* Наша команда */
 .our-team {
    background-color:var(--bg-team-filter);
-   padding: 94px 0 94px 0;
 }
 .our-team h2 {
    font-weight: bold;
