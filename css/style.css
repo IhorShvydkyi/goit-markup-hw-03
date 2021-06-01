@@ -38,10 +38,10 @@ body {
    margin: 0 auto;
    padding: 0 15px;
 }
-.container .doing ,
+.container .business-part ,
 .container .team-members,
 .footer-part .container ,
-.portfolio-content .container {
+.container .portfolio { 
    flex-direction: column; 
 }
 .section {
@@ -184,25 +184,25 @@ a.active {
 .hidden-header {
    display: none;
 }
-.section .features ul {
+.features ul {
    width: 100%;
    display: inherit;
    justify-content: space-around;
 }
-.section .features li {
+.features li {
    width: 270px;
    margin-right:var(--basic-card-gap);
 }
-.section .features li:last-child{
+.features li:last-child{
    margin-right: 0;
 }
-.section .features h3 {
+.features h3 {
    text-transform: uppercase;
    font-size: inherit;
    font-weight: 700;
    line-height: inherit;
 }
-.section .features p {
+.features p {
    margin-top: 10px;
    line-height: 1.714;
    letter-spacing: 0.03em;
@@ -210,24 +210,24 @@ a.active {
 }
 
 /* Чем мы занимаемся*/
-.business-part {
+.business {
    padding: 0px 0 94px 0;
 }
 
-.business-part h2 {
+.business h2 {
    font-weight: bold;
    font-size: 36px;
    line-height: 1.166;
    text-align: center;
 }
-.doing-list {
+.business-part-list {
    display: flex;
    margin-top:50px;
 }
-.doing-list .item {
+.business-part-list .item {
    margin-right: var(--basic-card-gap);
 }
-.doing-list .item :last-child {
+.business-part-list .item :last-child {
    margin-right: 0;
 }
 
@@ -242,17 +242,17 @@ a.active {
    text-align: center;
    letter-spacing: inherit;
 }
-.our-team ul {
+.team-members-list {
    display: flex;
    margin-top:50px;
 }
-.our-team li {
+.team-members-list-item {
    background-color: var(--main-color);
    border-radius: 0px 0px 3px 3px;
    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
    margin-right: var(--basic-card-gap);
 }
-.our-team li:last-child{
+.team-members-list-item :last-child{
    margin-right: 0;
 }
 .card-description {
@@ -289,8 +289,10 @@ a.active {
    line-height: 1.192;
    letter-spacing: 0.03em;
 }
-.footer-part ul {
+.contacts {
    margin-top: 20px;
+}
+.footer-part ul {
    justify-content: space-between;
 }
 .footer-part li {
@@ -316,18 +318,15 @@ margin-bottom: 0;
 
 /* Портфолио */
 
-.portfolio-content {
- padding: 94px 0;
-}
 .filter-list {
-   margin-left:280px;
+   justify-content: center;
    margin-bottom: 50px;
    display:flex;
 }
-.filter-list li {
+.filter-list .item {
     margin-right:8px;
 }
-.filter-list li:last-child{
+.filter-list .item:last-child{
    margin-right:0;
 }
 .filter-list .filter-link-blue {
@@ -355,20 +354,22 @@ margin-bottom: 0;
 
 /* Примеры на странице Портфолио */
 .pattern-list {
-    margin-top:calc(-1* var(--basic-card-gap));
-    margin-left:calc(-1* var(--basic-card-gap));
+   margin-top:calc(-1* var(--basic-card-gap));
+   margin-left:calc(-1* var(--basic-card-gap));
    display:flex;
    flex-wrap: wrap;
 }
 .pattern-list a {
    text-decoration: none;
 }
-.pattern-list li{
+.pattern-list .item{
    background-color: var(--main-color);
-   flex-basis: calc(100%/3 -30px);
    margin-left: var(--basic-card-gap);
    margin-top: var(--basic-card-gap);
 } 
+.pattern-list .item :nth-child(3) {
+   margin-right: 0;
+}
 .pattern-card-description {
  padding:20.43px  24px; 
  border-left: 1px solid #eee;
