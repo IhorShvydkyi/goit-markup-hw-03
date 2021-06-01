@@ -226,6 +226,7 @@ a.active {
 }
 .business-part-list .item {
    margin-right: var(--basic-card-gap);
+   margin-top: 0;
 }
 .business-part-list .item :last-child {
    margin-right: 0;
